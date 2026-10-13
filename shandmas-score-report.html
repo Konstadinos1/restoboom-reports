@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shandmas — Rapport AEO | RestoBoom</title>
+<style>
+  :root { --dark: #0a0a0f; --card: #15151f; --accent: #f59e0b; --green: #22c55e; --red: #ef4444; --yellow: #eab308; --text: #e5e7eb; --muted: #6b7280; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--dark); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; }
+  .container { max-width: 680px; margin: 0 auto; padding: 24px 20px; }
+  .header { text-align: center; padding: 40px 0 32px; border-bottom: 1px solid #1f1f2e; }
+  .logo { font-size: 14px; letter-spacing: 3px; color: var(--accent); text-transform: uppercase; font-weight: 700; }
+  .subtitle { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  h1 { font-size: 28px; margin-top: 20px; }
+  .score-ring { width: 160px; height: 160px; margin: 28px auto; border-radius: 50%; background: conic-gradient(#eab308 0deg 187deg, #1f1f2e 187deg 360deg); display: flex; align-items: center; justify-content: center; position: relative; }
+  .score-ring::before { content: ''; width: 130px; height: 130px; border-radius: 50%; background: var(--dark); position: absolute; }
+  .score-num { font-size: 48px; font-weight: 800; color: #eab308; z-index: 1; }
+  .score-label { text-align: center; font-size: 13px; color: var(--muted); margin-top: -8px; }
+  .pillars { margin-top: 36px; }
+  .pillar { background: var(--card); border-radius: 12px; padding: 20px; margin-bottom: 12px; }
+  .pillar-header { display: flex; justify-content: space-between; align-items: center; }
+  .pillar-name { font-weight: 600; font-size: 15px; }
+  .pillar-score { font-weight: 800; font-size: 24px; }
+  .bar { height: 8px; border-radius: 4px; background: #1f1f2e; margin: 12px 0; overflow: hidden; }
+  .bar-fill { height: 100%; border-radius: 4px; }
+  .findings { font-size: 13px; color: var(--muted); }
+  .findings li { margin: 4px 0; list-style: none; padding-left: 20px; position: relative; }
+  .findings li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); }
+  .cta { background: linear-gradient(135deg, #f59e0b, #ea580c); border-radius: 12px; padding: 24px; text-align: center; margin-top: 36px; }
+  .cta h3 { color: #0a0a0f; font-size: 18px; }
+  .cta p { color: #0a0a0f; font-size: 14px; margin: 8px 0 16px; }
+  .cta-btn { display: inline-block; background: #0a0a0f; color: var(--accent); padding: 12px 32px; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 15px; }
+  .footer { text-align: center; font-size: 11px; color: var(--muted); margin-top: 32px; padding-top: 20px; border-top: 1px solid #1f1f2e; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">⚡ RestoBoom</div>
+    <div class="subtitle">Rapport de Visibilité AEO — Gratuit</div>
+    <h1>Shandmas</h1>
+    <p style="color: var(--muted); font-size: 14px;">Haitian • Montreal (Hochelaga)</p>
+    <div class="score-ring"><span class="score-num">52</span></div>
+    <div class="score-label">Score de Visibilité AEO sur 100</div>
+  </div>
+  <p style="text-align: center; font-size: 14px; color: var(--yellow); margin-bottom: 28px;">⚠️ Shandmas est le meilleur restaurant haïtien à Montréal — vos clients le savent. Mais ChatGPT ne le sait pas encore. On rend votre excellence visible aux IA.</p>
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar-header">
+        <span class="pillar-name">AEO Réponses IA</span>
+        <span class="pillar-score" style="color: #ef4444;">35</span>
+      </div>
+      <div class="bar"><div class="bar-fill" style="width: 35%; background: #ef4444;"></div></div>
+      <ul class="findings"><li>Site Shopify avec menu textuel — bon départ!</li><li>Mais pas de données structurées schema.org</li><li>Pas de FAQ indexable</li><li>ChatGPT mentionne rarement la cuisine haïtienne</li></ul>
+    </div>
+    <div class="pillar">
+      <div class="pillar-header">
+        <span class="pillar-name">Visibilité Locale </span>
+        <span class="pillar-score" style="color: #22c55e;">60</span>
+      </div>
+      <div class="bar"><div class="bar-fill" style="width: 60%; background: #22c55e;"></div></div>
+      <ul class="findings"><li>Présence DoorDash et RestoMontreal solide</li><li>Note 4.6/5 — excellent</li><li>Programme de fidélité en place</li><li>Zones de livraison bien définies</li></ul>
+    </div>
+    <div class="pillar">
+      <div class="pillar-header">
+        <span class="pillar-name">Référencement (SEO) </span>
+        <span class="pillar-score" style="color: #eab308;">48</span>
+      </div>
+      <div class="bar"><div class="bar-fill" style="width: 48%; background: #eab308;"></div></div>
+      <ul class="findings"><li>Contenu textuel présent (menu, descriptions)</li><li>Manque de pages par plat (griot, tasso, legim)</li><li>Blogue absent — pas de contenu éducatif</li><li>Mots-clés 'cuisine haïtienne Montréal' sous-exploités</li></ul>
+    </div>
+    <div class="pillar">
+      <div class="pillar-header">
+        <span class="pillar-name">Site Web </span>
+        <span class="pillar-score" style="color: #22c55e;">58</span>
+      </div>
+      <div class="bar"><div class="bar-fill" style="width: 58%; background: #22c55e;"></div></div>
+      <ul class="findings"><li>Shopify fonctionnel avec commande en ligne</li><li>Bon contenu textuel et descriptions</li><li>Design moderne et accueillant</li><li>Pas de version blogue ou contenu AEO</li></ul>
+    </div>
+    <div class="pillar">
+      <div class="pillar-header">
+        <span class="pillar-name">Réseaux Sociaux </span>
+        <span class="pillar-score" style="color: #eab308;">55</span>
+      </div>
+      <div class="bar"><div class="bar-fill" style="width: 55%; background: #eab308;"></div></div>
+      <ul class="findings"><li>Instagram 6.5K — base solide</li><li>Programme de récompenses intégré</li><li>Contenu irrégulier</li><li>Pas de Reels ou TikTok</li></ul>
+    </div>
+    <div class="pillar">
+      <div class="pillar-header">
+        <span class="pillar-name">Avis et Réputation </span>
+        <span class="pillar-score" style="color: #22c55e;">68</span>
+      </div>
+      <div class="bar"><div class="bar-fill" style="width: 68%; background: #22c55e;"></div></div>
+      <ul class="findings"><li>Note 4.6/5 sur tous les plateformes</li><li>Témoignages clients solides</li><li>Pas de gestion proactive d'avis Google</li><li>Réputation excellente mais non optimisée</li></ul>
+    </div></div>
+  <div class="cta">
+    <h3>🚀 On peut passer de 52 à 75+ en 90 jours</h3>
+    <p>RestoBoom optimise votre visibilité pour que ChatGPT, Google AI et Perplexity recommandent Shandmas.</p>
+    <a href="https://agentops-empire.vercel.app" class="cta-btn">Voir comment ça marche →</a>
+  </div>
+  <div style="margin-top: 36px; background: var(--card); border-radius: 12px; padding: 24px;">
+    <h3 style="font-size: 16px; margin-bottom: 12px;">📈 Ce qu'on corrige en premier</h3>
+    <ol style="font-size: 14px; color: var(--muted); padding-left: 20px;"><li><strong style="color: var(--text);">Schema complet</strong> — Restaurant + Menu + FAQ sur votre site Shopify</li><li><strong style="color: var(--text);">Pages signature</strong> — Griot, tasso, legim, pikliz — chaque plat sa propre page</li><li><strong style="color: var(--text);">FAQ culturelle</strong> — Qu'est-ce que le griot? Le pikliz? — les IA cherchent ces réponses</li><li><strong style="color: var(--text);">Contenu AEO</strong> — Blogue: 'meilleur restaurant haïtien Montréal' — contenu qui positionne</li></ol>
+  </div>
+  <div class="footer">
+    <p>Rapport généré par RestoBoom • AgentOps Systems Inc.</p>
+    <p>Ce rapport est une analyse préliminaire gratuite. Pour un audit complet, contactez-nous.</p>
+  </div>
+</div>
+</body>
+</html>
